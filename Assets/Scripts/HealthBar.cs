@@ -8,10 +8,9 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    [SerializeField] private GameObject _gameObject;
+    [SerializeField] private Health _health;
     [SerializeField] private float _duration = 100f;
 
-    private Health _health;
     private Slider _slider;
     private float _runningTime;
     private float _maxHealth;
@@ -20,7 +19,6 @@ public class HealthBar : MonoBehaviour
 
     private void Awake()
     {
-        _health = _gameObject.GetComponent<Health>();
         _slider = GetComponent<Slider>();
         _maxHealth = _health.MaxValue;
         _health.HealthChanged += ChangeValue;

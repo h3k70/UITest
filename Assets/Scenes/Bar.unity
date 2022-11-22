@@ -954,7 +954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c1de02c4e448cc4a9dcc31def12b93c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameObject: {fileID: 1194006770}
+  _health: {fileID: 1194006773}
   _duration: 100
 --- !u!1 &878051947
 GameObject:
@@ -1530,9 +1530,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 180
   _maxHealth: 180
-  _healthChanged:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1207655687
 GameObject:
   m_ObjectHideFlags: 0
